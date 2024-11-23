@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <link rel="stylesheet" href="../currency_converter/css/style.css">
+</head>
+<body>
+    <div class="converter">
+        <h2>Conversor de Moneda</h2>
+        <div id="loading" class="loading">Cargando divisas...</div>
+        <input type="number" id="amount" placeholder="Ingrese la cantidad" aria-label="Cantidad a convertir">
+        <select id="fromCurrency" aria-label="Moneda de origen"></select>
+        <select id="toCurrency" aria-label="Moneda de destino"></select>
+        <button id="convert" disabled>Convertir</button>
+        <div id="result" aria-live="polite"></div>
+        <div id="error" class="error" aria-live="assertive"></div>
+    </div>
+
+    <script src="../currency_converter/js/script.js"></script>
+</body>
+</html>
